@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray_70"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/font_padding_10" >
+
+    <RelativeLayout
+        android:id="@+id/Top_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Layout_Below"
+        android:layout_marginBottom="@dimen/font_margin_10"
+        android:background="@drawable/corner_bg_white" >
+
+        <TextView
+            android:id="@+id/Take_Photo_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/font_margin_10"
+            android:fontFamily="Airal"
+            android:text="Select a photo source"
+            android:textColor="@color/Gray_Dark"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="normal" />
+
+        <View
+            android:id="@+id/view_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/Take_Photo_Txt"
+            android:layout_marginTop="@dimen/font_margin_10"
+            android:background="@color/Dark_White" />
+
+        <Button
+            android:id="@+id/Take_Photo_Camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popup_button_height"
+            android:layout_below="@+id/view_line_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/font_margin_5"
+            android:background="@android:color/transparent"
+            android:text="Take a Photo"
+            android:textColor="@color/Green_Light"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/Take_Photo_Camera"
+            android:layout_marginTop="@dimen/font_margin_5"
+            android:background="@color/Dark_White" />
+
+        <Button
+            android:id="@+id/Take_Photo_Library"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popup_button_height"
+            android:layout_below="@+id/view_line_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/font_margin_5"
+            android:background="@android:color/transparent"
+            android:text="Pick from Library"
+            android:textColor="@color/Green_Light"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Layout_Below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/corner_bg_white" >
+
+        <Button
+            android:id="@+id/Take_Photo_Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popup_button_height"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="Cancel"
+            android:textColor="@color/Green_Light"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

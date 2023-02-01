@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="roster_items">
+        <item>Calendar</item>
+        <item>View Shifts</item>
+        <item>Available Shifts</item>
+        <item>Break History</item>
+    </string-array>
+   
+
+</resources>

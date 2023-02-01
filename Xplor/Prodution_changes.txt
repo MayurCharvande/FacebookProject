@@ -1,0 +1,19 @@
+Android play store application information.
+1. Version- 1.3 and code- 1
+2. Added key store.
+3. Implement uses library.
+
+Production changes.
+1.Facebook project id-365541406976823
+2.Gcm project sender id - 59040412293
+3.Production urls.
+ a) Main domain - http://webservice.myxplor.com/index.php/kidi_api_13/ 
+ b) User api - http://webservice.myxplor.com/index.php/user_api_13/
+ c) Xplor megnto login - http://webservice.myxplor.com/kidi_api_13/register_magento
+4.Category Id for Magento Store to get the products
+  a) listing - 4
+  b) reading - 3
+  c) watching - 5
+5. Beacons time - 15 minuts.
+6.Beacons App Token @"58ec2daa50ba2104f8c9d0ef6aa3d076"
+7.Beacons App Key @"app_1h87ooa60l"

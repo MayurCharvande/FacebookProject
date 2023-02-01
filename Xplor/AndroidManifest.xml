@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xplor.dev"
+    android:versionCode="5"
+    android:versionName="1.3.8" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    
+    <!-- Map permission -->
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <permission
+        android:name="com.xplor.dev.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.xplor.dev.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <permission
+        android:name="com.xplor.dev.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.xplor.dev.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Needed permissions in order to scan for beacons. -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- Declaration that this app is usable on phones with Bluetooth Low Energy. -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_withoutsyncing"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:name="com.xplor.dev.GlobalApplication"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".HomeScreenFragment"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebServiceScreen"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ResetChangePasswordActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InviteScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MedicalHistoryDetial"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AddMedicalActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MedicationScreen"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ChildProfileEditActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ChildPostScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PhotoCaptureScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VideoCaptureActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".LocationSearchActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LearningCatScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ChildPostTagsActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ChildPostTagsDetailScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ChildLikeDetailScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".LearningSubCatScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CommentScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+            android:name="com.xplor.common.ShareScreen"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".LearningActvities"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xplor.chellanges.badges.ChallengesAndBadgesMain"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xplor.chellanges.badges.ChallengesAndBadges"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ImageFullScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VideoFullScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".XplorProductScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".EducatorMainActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+         <activity
+            android:name=".ChildTagsMainActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".EducatorRoomSelectionFragment"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".EducatorChildListActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xplor.roastring.ViewShiftsScreen"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xplor.roastring.BreakHistoryScreen"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xplor.roastring.PastShiftScreen"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xplor.roastring.UpcomingShiftScreen"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xplor.roastring.AvailableShiftScreen"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xplor.roastring.CalendarView"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.xplor.roastring.TodayShiftScreen"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".YesNoPopUp"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ChildAttendanceScreenActivity"
+            android:configChanges="navigation|screenLayout|uiMode|orientation|screenSize|layoutDirection|keyboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".NotificationPopupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".NotificationPerentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".NotificationRostringActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".NotificationCancelShiftActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/Facebook_App_Id" />
+
+        <receiver
+            android:name="com.xplor.common.C2dmReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receive the actual message -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receive the registration id -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.xplor.common.C2dmReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.xplor.common.C2dmReceiver" />
+
+        <!-- Esti_mote service responsible for scanning beacons. -->
+        <service
+            android:name="com.estimote.sdk.service.BeaconService"
+            android:exported="false" />
+
+        <receiver android:name="com.xplor.beacon.EstimoteReceiver" >
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.xplor.beacon.EstimoteService" />
+
+    </application>
+
+</manifest>

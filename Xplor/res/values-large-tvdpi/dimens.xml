@@ -1,0 +1,88 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for 800x1280 tvdpi tablets devices (e.g. 10" tablets) here.
+    -->
+    
+    <!-- Main Activity child popup left-reight margin -->
+       <dimen name="child_popup_leftright_margin_25">42dp</dimen>
+       <dimen name="child_popup_height_400">550dp</dimen>
+       
+    
+     <!-- Font Margin -->
+     <dimen name="font_margin_0">0dp</dimen>
+     <dimen name="font_margin_5">8dp</dimen>
+     <dimen name="font_margin_10">15dp</dimen>
+     <dimen name="font_margin_15">20dp</dimen>
+     <dimen name="font_margin_20">25dp</dimen>
+     <dimen name="font_margin_25">30dp</dimen>
+     <dimen name="font_margin_30">37dp</dimen>
+     <dimen name="font_margin_35">40dp</dimen>
+     <dimen name="font_margin_40">45dp</dimen>
+     <dimen name="font_margin_45">50dp</dimen>
+     <dimen name="font_margin_50">55dp</dimen>
+     <dimen name="font_margin_55">60dp</dimen>
+     <dimen name="font_margin_60">65dp</dimen> 
+     
+     <!-- Font Padding -->
+     <dimen name="font_padding_0">0dp</dimen>
+     <dimen name="font_padding_5">8dp</dimen>
+     <dimen name="font_padding_10">15dp</dimen>
+     <dimen name="font_padding_15">20dp</dimen>
+     <dimen name="font_padding_20">25dp</dimen>
+     <dimen name="font_padding_25">30dp</dimen>
+     <dimen name="font_padding_30">35dp</dimen>
+     <dimen name="font_padding_35">40dp</dimen>
+     <dimen name="font_padding_40">45dp</dimen>
+     <dimen name="font_padding_45">50dp</dimen>
+     <dimen name="font_padding_50">55dp</dimen>
+     <dimen name="font_padding_55">60dp</dimen>
+     <dimen name="font_padding_60">65dp</dimen> 
+     
+     <!-- Font Size  -->
+     <dimen name="font_size_8">8dp</dimen>
+     <dimen name="font_size_10">10dp</dimen>
+     <dimen name="font_size_12">12dp</dimen>
+     <dimen name="font_size_14">14dp</dimen>
+     <dimen name="font_size_16">16dp</dimen>
+     <dimen name="font_size_18">18dp</dimen>
+     <dimen name="font_size_20">20dp</dimen>
+     <dimen name="font_size_22">22dp</dimen>
+     <dimen name="font_size_24">24dp</dimen>
+     <dimen name="font_size_26">26dp</dimen>
+     <dimen name="font_size_28">28dp</dimen>
+     <dimen name="font_size_30">30dp</dimen>
+     
+     <!-- Navigation height -->
+     <dimen name="header_height">65dp</dimen>
+     <dimen name="header_title_width">300dp</dimen>
+     
+      <dimen name="popup_width">400dp</dimen>
+     <dimen name="popup_button_width">110dp</dimen>
+     <dimen name="popup_button_height">45dp</dimen>
+     
+      <dimen name="room_button_WH">210dp</dimen>
+      <dimen name="text_message_height">90px</dimen>
+     
+     <dimen name="edit_text_height">45dp</dimen>
+     <dimen name="edit_text_large_height">80dp</dimen>
+     
+     <dimen name="post_image_width">780px</dimen>
+     
+     <dimen name="weel_layout_height">250dp</dimen>
+     
+     <dimen name="photo_width">266px</dimen>
+     
+     <dimen name="edit_popup_width">90dp</dimen>
+     <dimen name="edit_popup_height">80dp</dimen>
+     <dimen name="edit_popup_margin">15dp</dimen>
+     
+     <dimen name="edit_max_height">135dp</dimen>
+     <dimen name="edit_min_height">100dp</dimen>
+     
+     <dimen name="challenges_image_height">500dp</dimen>
+     
+     <dimen name="Setting_image_Wh">100dp</dimen>
+
+</resources>

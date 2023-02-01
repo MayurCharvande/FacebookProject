@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Smile_Popup_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_black_90"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/center_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginLeft="@dimen/font_margin_30"
+        android:layout_marginRight="@dimen/font_margin_30"
+        android:background="@drawable/rounded_bg_item_white"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/Smile_Popup_Listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/list_item_drak_gray_address"
+            android:dividerHeight="0.7dp"
+            android:scrollbars="none" />
+
+        <View
+            android:id="@+id/Bottom_Line"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/light_gray" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Smile_Close_Btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/center_Layout"
+        android:layout_marginRight="@dimen/font_margin_10"
+        android:layout_marginTop="-30dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/btn_close" />
+
+</RelativeLayout>

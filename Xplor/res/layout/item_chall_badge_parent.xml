@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ChallBadge_Section_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/ChallBadge_Section_ITMTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg_border"
+            android:fontFamily="Airal"
+            android:padding="@dimen/font_padding_8"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ChallBadge_Message_ITMTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Airal"
+            android:padding="@dimen/font_padding_5"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="normal" />
+    </LinearLayout>
+  <LinearLayout
+        android:id="@+id/ChallBadge_Section_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/ChallBadge_Section_BottTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_bg_border"
+            android:fontFamily="Airal"
+            android:padding="@dimen/font_padding_8"
+            android:text=""
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ChallBadge_alldata_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/challenges_badges_parent_image_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp" >
+
+            <ImageView
+                android:id="@+id/challenges_badges_parent_image"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/hello"
+                android:src="@drawable/rectangle_bg_white" />
+
+            <ProgressBar
+                android:id="@+id/challenges_badges_parent_progressBar"
+                style="?android:attr/progressBarStyleSmallInverse"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/challenges_badges_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_margin_10"
+            android:layout_marginRight="@dimen/font_margin_5"
+            android:layout_marginTop="@dimen/font_margin_5"
+            android:layout_toLeftOf="@+id/followBtn"
+            android:layout_toRightOf="@+id/challenges_badges_parent_image_rl"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/txt_user_name"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_size_16" />
+
+        <Button
+            android:id="@+id/followBtn"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_margin_5"
+            android:background="@drawable/rounded_corner_bg_green"
+            android:contentDescription="@string/hello"
+            android:fontFamily="Arial"
+            android:text="@string/txt_follow"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_size_12"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/challenges_badges_parent_image_rl" />
+    </RelativeLayout>
+
+  
+
+</LinearLayout>

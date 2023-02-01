@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_gray_70"
+        android:padding="@dimen/font_padding_5" >
+
+        <RelativeLayout
+            android:id="@+id/Search_inner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg_item_white" >
+
+            <EditText
+                android:id="@+id/LeaderBoard_Search_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/LeaderBoard_Search_Btn"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/search_icon"
+                android:ems="10"
+                android:fontFamily="Airal"
+                android:hint="Search"
+                android:inputType="textPersonName"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Green_Light"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/LeaderBoard_Search_Btn"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/hello"
+                android:src="@drawable/btn_close" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/LeaderBoard_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/Gray_Dark_Calendar"
+        android:dividerHeight="0.8dp"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/Gray_Dark_Calendar" />
+
+</LinearLayout>

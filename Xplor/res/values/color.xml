@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="White">#FFFFFF</color>
+    <color name="Dark_White">#EDEDF1</color>
+    <color name="Header_Color">#F2F2F5</color>
+    <color name="Gray_Dark_Calendar">#c7c7c7</color>
+    <color name="Gray_Light_Calendar">#f2f2f2</color>
+    <color name="border_color">#d9d9de</color>
+    <color name="Black">#000000</color>
+    <color name="Gray_Dark">#606060</color>
+    <color name="Gray_Dark_40">#404040</color>
+    <color name="Blue">#4791FF</color>
+    <color name="Green_Light">#5CB8E6</color>
+    <color name="Red_Color">#FF3333</color> 
+    <color name="red_cal_leavebg_color">#FF0000</color> 
+    <color name="red_cal_leave_oval_color">#8B0000</color> 
+    <color name="LAYOUT_BG">#e0e0e0</color>
+    <color name="light_gray">#d8d8d8</color>
+    <color name="callout_box_gray">#857e7e</color>
+    <color name="orange">#f69517</color>
+    <color name="orange_banner">#ff7417</color>
+    <color name="dark_grey">#1a1c1d</color>
+    <color name="dark_grey_large_212527">#212527</color>
+    <color name="yellow_callout">#F69517</color>
+    <color name="list_item_drak_gray_address">#A0A0A0</color>
+    <color name="list_item_red_detial">#ec6306</color>
+    <color name="transparent">#99000000</color>
+    <color name="transparent_black_90">#90000000</color>
+     <color name="transparent_black_75">#BF000000</color>
+    <color name="transparent_black_70">#70000000</color>
+    <color name="transparent_gray_70">#80606060</color>
+    <color name="tabTransparent_white_80">#80ffffff</color>
+    <color name="tabTransparent_white_30">#30ffffff</color>
+    <color name="green_color">#007AFF</color>
+    <color name="tabTransparent_gray_30">#30525252</color>
+    <color name="tabTransparent_gray_20">#20525252</color>
+    <color name="calender_back_green">#58A2DF</color>
+    <color name="calender_s_green">#5CB8E1</color>
+    
+    <color name="titlebackgroundcolor">#ffffff</color>
+    <color name="titletextcolor">#000000</color>
+    
+</resources>

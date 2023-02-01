@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark_White" >
+
+    <ImageButton
+        android:id="@+id/PhotoVideoChangeCat_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/font_margin_10"
+        android:layout_marginRight="@dimen/font_margin_10"
+        android:layout_marginTop="@dimen/font_margin_10"
+        android:layout_marginBottom="@dimen/font_margin_5"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:scaleType="centerInside"
+        android:src="@drawable/photo_switch" />
+
+    <GridView
+        android:id="@+id/PhotoChangeCat_Grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/PhotoVideoChangeCat_Btn"
+        android:horizontalSpacing="@dimen/font_margin_8"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/font_margin_10" />
+
+    <GridView
+        android:id="@+id/VideoChangeCat_Grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/PhotoVideoChangeCat_Btn"
+        android:horizontalSpacing="@dimen/font_margin_8"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/font_margin_10" />
+
+</RelativeLayout>

@@ -1,0 +1,522 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <RelativeLayout
+        android:id="@+id/Header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/Header_Color" >
+
+        <ImageButton
+            android:id="@+id/Settings_Back_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/hello"
+            android:paddingBottom="@dimen/font_padding_10"
+            android:paddingLeft="@dimen/font_padding_10"
+            android:paddingRight="@dimen/font_padding_15"
+            android:paddingTop="@dimen/font_padding_10"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/Settings_Title_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="Arial"
+            android:text="@string/txt_Settings"
+            android:textColor="@color/Gray_Dark"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/Settings_Logout_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_green_selector"
+            android:fontFamily="Airal"
+            android:padding="@dimen/font_padding_10"
+            android:text="Logout"
+            android:textColor="@color/Green_Light"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Header_layout"
+        android:background="@color/border_color" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line_1"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/Top_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White" >
+
+            <RelativeLayout
+                android:id="@+id/Image_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/Settings_User_Img"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/font_margin_5"
+                    android:contentDescription="@string/hello"
+                    android:src="@drawable/rectangle_bg_white" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleSmallInverse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Settings_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Image_Layout"
+                android:layout_marginLeft="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:fontFamily="Airal"
+                android:text="SETTINGS"
+                android:textColor="@color/list_item_drak_gray_address"
+                android:textSize="@dimen/font_size_20"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/Settings_AppVersionTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Image_Layout"
+                android:layout_marginRight="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:fontFamily="Airal"
+                android:text="Version 1.0"
+                android:textColor="@color/list_item_drak_gray_address"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/view_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/Settings_Txt"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:background="@color/Dark_White" />
+
+            <TextView
+                android:id="@+id/Settings_Activities_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/view_line_2"
+                android:layout_marginLeft="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:fontFamily="Airal"
+                android:text="Activities"
+                android:textColor="@color/list_item_drak_gray_address"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:id="@+id/Settings_Activities_RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_line_2"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/STAcitivity_On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/font_margin_30"
+                    android:checked="true"
+                    android:text="On"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/STAcitivity_Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/font_margin_50"
+                    android:text="Off"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/view_line_3"
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:layout_below="@+id/Settings_Activities_Txt"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:background="@color/Dark_White" />
+
+            <TextView
+                android:id="@+id/Settings_Toilet_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/view_line_3"
+                android:layout_marginLeft="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:fontFamily="Airal"
+                android:text="Toilet"
+                android:textColor="@color/list_item_drak_gray_address"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:id="@+id/Settings_Toilet_RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_line_3"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/STToilet_On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/font_margin_30"
+                    android:text="On"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/STToilet_Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/font_margin_50"
+                    android:checked="true"
+                    android:text="Off"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/view_line_4"
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:layout_below="@+id/Settings_Toilet_Txt"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:background="@color/Dark_White" />
+
+            <TextView
+                android:id="@+id/Settings_Health_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/view_line_4"
+                android:paddingBottom="3dp"
+                android:layout_marginLeft="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:fontFamily="Airal"
+                android:text="Health"
+                android:textColor="@color/list_item_drak_gray_address"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="normal" />
+
+            <RadioGroup
+                android:id="@+id/Settings_Health_RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_line_4"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/STHealth_On"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/font_margin_30"
+                    android:checked="true"
+                    android:text="On"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/STHealth_Off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/font_margin_50"
+                    android:text="Off"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/view_line_5"
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:layout_below="@+id/Settings_Health_Txt"
+                android:layout_marginTop="@dimen/font_margin_5"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_5" >
+
+                <TextView
+                    android:id="@+id/Settings_FoodEating_Txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/font_margin_10"
+                    android:layout_toLeftOf="@+id/Settings_FoodEating_RadioGroup"
+                    android:fontFamily="Airal"
+                    android:text="Food eating pattern  "
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="normal" />
+
+                <RadioGroup
+                    android:id="@+id/Settings_FoodEating_RadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/STFood_On"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/font_margin_30"
+                        android:text="On"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/font_size_16"
+                        android:textStyle="normal" />
+
+                    <RadioButton
+                        android:id="@+id/STFood_Off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/font_margin_50"
+                        android:checked="true"
+                        android:text="Off"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/font_size_16"
+                        android:textStyle="normal" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_6"
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:layout_below="@+id/Address_layout"
+                android:layout_marginTop="3dp"
+                android:background="@color/Dark_White" />
+
+            <TextView
+                android:id="@+id/Settings_Name_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/view_line_6"
+                android:layout_marginLeft="@dimen/font_margin_10"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:fontFamily="Airal"
+                android:text="Edit Name"
+                android:textColor="@color/list_item_drak_gray_address"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/Settings_Name_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_line_6"
+                android:layout_marginLeft="@dimen/font_margin_25"
+                android:layout_marginRight="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_5"
+                android:layout_toRightOf="@+id/Settings_Name_Txt"
+                android:background="@drawable/round_bg_input"
+                android:ems="10"
+                android:fontFamily="Airal"
+                android:inputType="textPersonName|textCapSentences"
+                android:paddingLeft="@dimen/font_padding_5"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/view_line_7"
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:layout_below="@+id/Settings_Name_Edt"
+                android:layout_marginTop="@dimen/font_margin_5"
+                android:background="@color/Dark_White" />
+
+            <TextView
+                android:id="@+id/Settings_Phone_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/view_line_7"
+                android:layout_marginLeft="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:fontFamily="Airal"
+                android:text="Edit Phone"
+                android:textColor="@color/list_item_drak_gray_address"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/Settings_Phone_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_line_7"
+                android:layout_marginLeft="@dimen/font_margin_25"
+                android:layout_marginRight="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_5"
+                android:layout_toRightOf="@+id/Settings_Phone_Txt"
+                android:background="@drawable/round_bg_input"
+                android:ems="10"
+                android:fontFamily="Airal"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/font_padding_5"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/view_line_8"
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:layout_below="@+id/Settings_Phone_Edt"
+                android:layout_marginTop="@dimen/font_margin_5"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Addresss_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_8" >
+
+                <TextView
+                    android:id="@+id/Settings_Address_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/font_margin_10"
+                    android:layout_marginTop="@dimen/font_margin_10"
+                    android:fontFamily="Airal"
+                    android:text="Edit Address"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/Settings_Address_Edt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edit_text_large_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/font_margin_10"
+                    android:layout_marginRight="@dimen/font_margin_10"
+                    android:layout_marginTop="@dimen/font_margin_5"
+                    android:layout_toRightOf="@+id/Settings_Address_Txt"
+                    android:background="@drawable/round_bg_input"
+                    android:ems="10"
+                    android:fontFamily="Airal"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:paddingLeft="@dimen/font_padding_5"
+                    android:paddingTop="@dimen/font_padding_5"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <View
+                    android:id="@+id/view_line_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.2dp"
+                    android:layout_below="@+id/Settings_Address_Edt"
+                    android:layout_marginTop="@dimen/font_margin_5"
+                    android:background="@color/Dark_White" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Settings_ChangePassword_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Addresss_layout"
+                android:layout_margin="@dimen/font_margin_10"
+                android:background="@drawable/button_login_selector"
+                android:fontFamily="Airal"
+                android:padding="@dimen/font_padding_8"
+                android:text="Change Password"
+                android:textColor="@color/White"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/Settings_Submit_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Addresss_layout"
+                android:layout_margin="@dimen/font_margin_10"
+                android:background="@drawable/button_login_selector"
+                android:fontFamily="Airal"
+                android:paddingBottom="@dimen/font_padding_8"
+                android:paddingLeft="@dimen/font_padding_15"
+                android:paddingRight="@dimen/font_padding_15"
+                android:paddingTop="@dimen/font_padding_8"
+                android:text="Submit"
+                android:textColor="@color/White"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="normal" />
+
+            <View
+                android:id="@+id/view_line_10"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/Settings_Submit_Btn" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

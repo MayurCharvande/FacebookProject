@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:padding="@dimen/font_margin_5" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <com.xplor.adaptor.GridViewWithHeaderAndFooter
+            android:id="@+id/educator_room_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" >
+        </com.xplor.adaptor.GridViewWithHeaderAndFooter>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/font_margin_10"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Room_TotalChild_Checked_Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="Airal"
+            android:gravity="center_horizontal"
+            android:text="0 Children checked-in"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>

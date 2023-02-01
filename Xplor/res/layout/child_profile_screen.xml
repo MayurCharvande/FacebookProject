@@ -1,0 +1,718 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark_White" >
+
+    <RelativeLayout
+        android:id="@+id/Top_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/White" >
+
+        <ImageButton
+            android:id="@+id/ChildProfile_Home_Btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/font_margin_10"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/hello"
+            android:padding="@dimen/font_padding_10"
+            android:src="@drawable/graph_blue" />
+
+        <ImageButton
+            android:id="@+id/ChildProfile_Medical_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/font_margin_10"
+            android:layout_toRightOf="@+id/ChildProfile_Home_Btns"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/hello"
+            android:padding="@dimen/font_padding_10"
+            android:src="@drawable/bottle_blue" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Top_Layout"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/Main_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Dark_White" >
+
+            <RelativeLayout
+                android:id="@+id/Image_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/ChildProfile_Child_Img"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/font_margin_5"
+                    android:contentDescription="@string/hello"
+                    android:src="@drawable/rectangle_bg_white" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleSmallInverse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ChildProfile_info_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Image_Layout"
+                android:layout_marginLeft="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:fontFamily="Airal"
+                android:text="INFO"
+                android:textColor="@color/list_item_drak_gray_address"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/ChildProfile_InfoEdit_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/Image_Layout"
+                android:layout_marginRight="@dimen/font_margin_10"
+                android:background="@android:color/transparent"
+                android:fontFamily="Airal"
+                android:padding="@dimen/font_padding_10"
+                android:text="Edit"
+                android:textColor="@color/Green_Light"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/ChildProfile_info_Txt"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_1"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/name_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Parent Name"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProfile_PName_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/name_Txt"
+                    android:layout_marginLeft="@dimen/font_margin_40"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_1"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_2"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/Age_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Age"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProfile_Age_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_3"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_2"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_3"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/Birthday_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Birthday"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProfile_Birthday_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_4"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_3"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_4"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/Gender_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Gender"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProfile_Gender_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_5"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_4"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_5"
+                android:background="@color/Dark_White" >
+
+                <TextView
+                    android:id="@+id/Contact_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:padding="@dimen/font_padding_10"
+                    android:text="CONTACT"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/ChildProfile_ConEdit_Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/font_margin_10"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="Airal"
+                    android:padding="@dimen/font_padding_10"
+                    android:text="Edit"
+                    android:textColor="@color/Green_Light"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_6"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_5"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_6"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/CenterAddress_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Center Address"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProfile_CenterAdd_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/font_margin_8"
+                    android:layout_toRightOf="@+id/CenterAddress_Txt"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_7"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_6"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_7"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/Phone_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Center Phone"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProfile_PhoneNo_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_8"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_7"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_8"
+                android:background="@color/Dark_White" >
+
+                <TextView
+                    android:id="@+id/EmgContact_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/font_margin_10"
+                    android:layout_toLeftOf="@+id/ChildProfile_EmgEdit_Btn"
+                    android:fontFamily="Airal"
+                    android:padding="@dimen/font_padding_10"
+                    android:text="EMERGENCY CONTACT NUMBERS"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/ChildProfile_EmgEdit_Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/font_margin_10"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="Airal"
+                    android:padding="@dimen/font_padding_10"
+                    android:text="Edit"
+                    android:textColor="@color/Green_Light"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_9"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_8"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_9"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/ChildPro_UserName_Txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text=""
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildPro_ContNo_Txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_10"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_9"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_10"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/ChildPro_UserName_Txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text=""
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildPro_Contno_Txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_11"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_10"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_11"
+                android:background="@color/Dark_White" >
+
+                <TextView
+                    android:id="@+id/Other_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/font_margin_10"
+                    android:fontFamily="Airal"
+                    android:padding="@dimen/font_padding_10"
+                    android:text="OTHER"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/ChildProfile_OtherEdit_Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/font_margin_10"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="Airal"
+                    android:padding="@dimen/font_padding_10"
+                    android:text="Edit"
+                    android:textColor="@color/Green_Light"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_12"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_11"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_12"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/Allergies_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Allergies"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProf_Allergies_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/font_margin_40"
+                    android:layout_toRightOf="@+id/Allergies_Txt"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_13"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_12"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_13"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/Bio_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Bio"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProfile_Bio_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/font_margin_40"
+                    android:layout_toRightOf="@+id/Bio_Txt"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_14"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_13"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_14"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/Needs_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Needs"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProfile_Needs_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/font_margin_40"
+                    android:layout_toRightOf="@+id/Needs_Txt"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_15"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_14"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Center_Layout_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_line_15"
+                android:background="@color/White"
+                android:padding="@dimen/font_padding_10" >
+
+                <TextView
+                    android:id="@+id/Medication_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="Airal"
+                    android:text="Medication"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/ChildProfile_Medication_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/font_margin_40"
+                    android:layout_toRightOf="@+id/Medication_Txt"
+                    android:fontFamily="Airal"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line_16"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/Center_Layout_15"
+                android:background="@color/Dark_White" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

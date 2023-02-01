@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    android:background="@color/White"
+    android:orientation="horizontal"
+    android:weightSum="12" >
+
+    <ImageButton
+        android:id="@+id/Tab_Feed_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/tab_home" />
+
+    <ImageButton
+        android:id="@+id/Tab_Photo_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/tab_photo" />
+
+    <ImageButton
+        android:id="@+id/Tab_Profile_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/tab_person_gray" />
+
+    <ImageButton
+        android:id="@+id/Tab_Post_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/tab_edit_post" />
+
+    <ImageButton
+        android:id="@+id/Tab_Badge_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/tab_badges" />
+
+    <ImageButton
+        android:id="@+id/Tab_Favorites_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/tab_star_inactive" />
+
+</LinearLayout>

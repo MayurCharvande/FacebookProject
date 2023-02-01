@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/font_padding_5" >
+
+    <LinearLayout
+        android:id="@+id/Top_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/font_margin_5"
+        android:layout_toLeftOf="@+id/upcoming_shift_cancelBtn"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/font_padding_5" >
+
+        <TextView
+            android:id="@+id/upcoming_shift_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:text="Thursday 16/04/2015"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/upcoming_shift_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:text="shift time : 00:00"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/upcoming_shift_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center_vertical"
+            android:text="Duration : 02:30 (Hrs : Min)"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/upcoming_shift_break"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:text="Break Hours : No Break"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_16" />
+
+        <TextView
+            android:id="@+id/upcoming_shift_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Arial"
+            android:gravity="center"
+            android:text="Room : NA"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/upcoming_shift_cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_blue_bg"
+        android:fontFamily="Arial"
+        android:text="Swap Shift"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_16" />
+
+</RelativeLayout>

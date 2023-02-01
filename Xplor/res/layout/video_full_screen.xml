@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black" >
+
+    <Button
+        android:id="@+id/FullVideo_Done_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/font_margin_8"
+        android:layout_marginTop="@dimen/font_margin_8"
+        android:background="@drawable/round_bg_black"
+        android:fontFamily="Airal"
+        android:paddingLeft="@dimen/font_padding_15"
+        android:paddingRight="@dimen/font_padding_15"
+        android:text="@string/txt_Done"
+        android:textColor="@color/White"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/font_margin_50"
+        android:layout_marginLeft="@dimen/font_margin_10"
+        android:layout_marginRight="@dimen/font_margin_10"
+        android:layout_marginTop="@dimen/font_margin_50" >
+
+        <VideoView
+            android:id="@+id/FullVideo_VideoView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/Center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/font_margin_10"
+            android:layout_marginRight="@dimen/font_margin_10"
+            android:layout_marginTop="@dimen/font_margin_8"
+            android:background="@drawable/rounded_bg_item_white" >
+
+            <RelativeLayout
+                android:id="@+id/Up_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="@dimen/font_padding_5" >
+
+                <ImageView
+                    android:id="@+id/Comment_User_Img"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/font_padding_8"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/hello"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/child_icon" />
+
+                <TextView
+                    android:id="@+id/Comment_UserName_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/font_margin_5"
+                    android:layout_toRightOf="@+id/Comment_User_Img"
+                    android:ellipsize="end"
+                    android:fontFamily="Airal"
+                    android:maxLines="2"
+                    android:text="Grourav gupta"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/Comment_DateTime_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Comment_UserName_Txt"
+                    android:layout_marginLeft="@dimen/font_margin_5"
+                    android:layout_marginTop="@dimen/font_margin_10"
+                    android:layout_toRightOf="@+id/Comment_User_Img"
+                    android:singleLine="true"
+                    android:text="Friday 06/02/2015 7:55 pm"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_12"
+                    android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/view_Line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/Comment_DateTime_Txt"
+                    android:layout_marginLeft="@dimen/font_margin_15"
+                    android:layout_marginTop="@dimen/font_margin_5"
+                    android:background="@color/list_item_drak_gray_address" />
+
+                <TextView
+                    android:id="@+id/Comment_Smile_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_Line_1"
+                    android:layout_marginLeft="@dimen/font_margin_10"
+                    android:layout_marginTop="@dimen/font_margin_10"
+                    android:ellipsize="end"
+                    android:fontFamily="Airal"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/Smile_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Comment_Smile_Txt"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/Homeitem_SmileActvity_Img"
+                        android:layout_width="25dp"
+                        android:layout_height="25dip"
+                        android:layout_marginLeft="@dimen/font_padding_5"
+                        android:layout_marginTop="@dimen/font_margin_10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/hello"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/Homeitem_Xplor_Img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="@dimen/font_padding_5"
+                        android:layout_marginTop="@dimen/font_margin_10"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/hello"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/Homeitem_SmileActvity_Txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/font_margin_5"
+                        android:layout_marginTop="@dimen/font_margin_5"
+                        android:fontFamily="Airal"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/font_size_14"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/Homeitem_SmileActvity_Blue_Txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/font_margin_5"
+                        android:layout_marginTop="@dimen/font_margin_5"
+                        android:ellipsize="end"
+                        android:fontFamily="Airal"
+                        android:text=""
+                        android:textColor="@color/Blue"
+                        android:textSize="@dimen/font_size_14"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Titmer_Layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Smile_Layout"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/font_padding_5" >
+
+                    <TextView
+                        android:id="@+id/Comment_Timer_Txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/font_margin_5"
+                        android:layout_marginTop="@dimen/font_margin_5"
+                        android:fontFamily="Airal"
+                        android:text=""
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/font_size_16"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:id="@+id/Comment_Titmer_Btn"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/Comment_Timer_Txt"
+                        android:layout_marginLeft="@dimen/font_margin_5"
+                        android:layout_marginTop="@dimen/font_margin_10"
+                        android:background="@drawable/rectangle_border_blue"
+                        android:fontFamily="Airal"
+                        android:text="Start"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/font_size_16"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_post_Img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Up_Layout" >
+
+                <ImageView
+                    android:id="@+id/Comment_post_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/hello"
+                    android:padding="@dimen/font_padding_5"
+                    android:src="@drawable/round_bg_border" />
+
+                <VideoView
+                    android:id="@+id/Comment_post_Video"
+                    android:layout_width="fill_parent"
+                    android:layout_height="260dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/hello"
+                    android:padding="@dimen/font_padding_5"
+                    android:src="@drawable/round_bg_border" />
+
+                <ImageView
+                    android:id="@+id/Comment_Video_Img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/hello"
+                    android:src="@drawable/video_play" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarPost"
+                    style="?android:attr/progressBarStyleLargeInverse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Comment_Message_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_post_Img"
+                android:layout_marginLeft="@dimen/font_margin_10"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:ellipsize="end"
+                android:fontFamily="Airal"
+                android:text=""
+                android:textColor="@color/Black"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/Medication_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Comment_Message_Txt"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/Comment_Medication_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/font_margin_10"
+                    android:layout_marginTop="@dimen/font_margin_5"
+                    android:fontFamily="Airal"
+                    android:text="Medication:This is test data"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Comment_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Medication_Layout"
+                android:layout_marginTop="@dimen/font_margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/font_margin_5" >
+
+                <TextView
+                    android:id="@+id/Comment_Like_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Airal"
+                    android:maxLines="1"
+                    android:text="1 Like"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/Comment_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/font_margin_10"
+                    android:fontFamily="Airal"
+                    android:maxLines="1"
+                    android:text="1 Comment"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/Comment_Share_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/font_margin_10"
+                    android:fontFamily="Airal"
+                    android:maxLines="1"
+                    android:text="1 Share"
+                    android:textColor="@color/list_item_drak_gray_address"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_Line_2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/Comment_Layout"
+                android:background="@color/Dark_White" />
+
+            <RelativeLayout
+                android:id="@+id/Bottom_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_Line_2"
+                android:padding="@dimen/font_margin_5" >
+
+                <TextView
+                    android:id="@+id/Comment_LikeName_Txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="Airal"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/font_size_14"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

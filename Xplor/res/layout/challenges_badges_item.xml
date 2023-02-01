@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White" >
+
+    <TextView
+        android:id="@+id/ChallBadge_Section_ITMTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/round_bg_border"
+        android:fontFamily="Airal"
+        android:padding="@dimen/font_padding_8"
+        android:text="Badges"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ChallBadge_Title_ITMTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ChallBadge_Section_ITMTxt"
+        android:background="@color/White"
+        android:fontFamily="Airal"
+        android:padding="@dimen/font_padding_5"
+        android:text="Eating challenges to achive"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/font_size_14"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ChallBadge_Title_ITMTxt"
+        android:background="@color/border_color" />
+
+    <FrameLayout
+        android:id="@+id/ChallBadge_Badges_ITMImgContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line_1"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/ChallBadge_Badges_ITMImg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/challenges_image_height"
+            android:layout_margin="@dimen/font_margin_10"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/hello"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/ChallBadge_Badges_ITMImgBack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/challenges_image_height"
+            android:layout_margin="@dimen/font_margin_10"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/hello"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/ChallBadge_Achievement_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ChallBadge_Badges_ITMImgContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/font_margin_10"
+        android:background="@color/Green_Light"
+        android:fontFamily="Airal"
+        android:padding="@dimen/font_padding_8"
+        android:text="Claim Achievement"
+        android:textColor="@color/White"
+        android:textSize="@dimen/font_size_18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ChallBadge_Message_ITTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ChallBadge_Achievement_Btn"
+        android:layout_marginLeft="@dimen/font_margin_10"
+        android:fontFamily="Airal"
+        android:gravity="center_horizontal"
+        android:text="Only click this button once you have completed the achievements"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/ChallBadge_Message_ITTxt" />
+
+</RelativeLayout>

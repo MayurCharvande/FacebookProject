@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector" >
+
+    <RelativeLayout
+        android:id="@+id/Smily_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:background="@color/White" >
+
+        <ImageView
+            android:id="@+id/SmileItem_Img"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/rectangle_bg_white" />
+
+        <ProgressBar
+            android:id="@+id/progressBarChild"
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/SmileItem_Txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/font_margin_5"
+        android:layout_toLeftOf="@+id/SmileItem_Check_Btn"
+        android:layout_toRightOf="@+id/Smily_layout"
+        android:fontFamily="Airal"
+        android:padding="@dimen/font_padding_12"
+        android:text=""
+        android:textColor="@color/Black"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="normal" />
+
+    <ImageButton
+        android:id="@+id/SmileItem_Check_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:padding="@dimen/font_padding_8"
+        android:src="@drawable/tick"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Dark_White" >
+
+    <com.costum.android.widget.PullAndLoadListView
+        android:id="@+id/Main_ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="@dimen/font_margin_5"
+        android:layout_marginRight="@dimen/font_margin_5"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/transparent"
+        android:divider="@color/Dark_White"
+        android:dividerHeight="10dp"
+        android:focusable="false"
+        android:paddingTop="@dimen/font_margin_5"
+        android:scrollbars="none" >
+    </com.costum.android.widget.PullAndLoadListView>
+
+    <com.xplor.quickscroll.QuickScroll
+        android:id="@+id/quickscroll"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

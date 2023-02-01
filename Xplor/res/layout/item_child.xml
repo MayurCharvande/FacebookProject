@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector" >
+
+    <RelativeLayout
+        android:id="@+id/Image_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip" >
+
+        <ImageView
+            android:id="@+id/Child_Image_Item"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/hello"
+            android:src="@drawable/rectangle_bg_white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Child_Name_Item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/font_margin_10"
+        android:layout_marginRight="@dimen/font_margin_5"
+        android:layout_marginTop="@dimen/font_margin_5"
+        android:layout_toRightOf="@+id/Image_Layout"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Fazaan Ansari"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/font_size_16" />
+
+    <ImageButton
+        android:id="@+id/Child_Profile_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Child_Home_Btn"
+        android:layout_below="@+id/Image_Layout"
+        android:layout_marginLeft="@dimen/font_margin_10"
+        android:layout_marginTop="@dimen/font_margin_10"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:paddingLeft="@dimen/font_margin_5"
+        android:paddingRight="@dimen/font_margin_5"
+        android:src="@drawable/tab_person_blue" />
+
+    <ImageButton
+        android:id="@+id/Child_Home_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Child_Medication_Hist_Btn"
+        android:layout_below="@+id/Image_Layout"
+        android:layout_marginLeft="@dimen/font_margin_10"
+        android:layout_marginTop="@dimen/font_margin_10"
+        android:layout_toRightOf="@+id/Child_Profile_Btn"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:paddingLeft="@dimen/font_margin_5"
+        android:paddingRight="@dimen/font_margin_5"
+        android:src="@drawable/graph_blue" />
+
+    <ImageButton
+        android:id="@+id/Child_Medication_Hist_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Image_Layout"
+        android:layout_marginLeft="@dimen/font_margin_10"
+        android:layout_marginTop="@dimen/font_margin_10"
+        android:layout_toRightOf="@+id/Child_Home_Btn"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:paddingLeft="@dimen/font_margin_5"
+        android:paddingRight="@dimen/font_margin_5"
+        android:src="@drawable/bottle_blue" />
+
+    <ImageButton
+        android:id="@+id/Child_MakePost_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Child_Medication_Hist_Btn"
+        android:layout_below="@+id/Image_Layout"
+        android:layout_marginLeft="@dimen/font_margin_10"
+        android:layout_marginTop="@dimen/font_margin_10"
+        android:layout_toRightOf="@+id/Child_Medication_Hist_Btn"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:paddingLeft="@dimen/font_padding_5"
+        android:paddingRight="@dimen/font_padding_5"
+        android:src="@drawable/tab_edit_post_active" />
+
+    <ImageButton
+        android:id="@+id/Child_checkin_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Image_Layout"
+        android:layout_marginLeft="@dimen/font_margin_10"
+        android:layout_marginTop="@dimen/font_margin_10"
+        android:layout_toRightOf="@+id/Child_MakePost_Btn"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hello"
+        android:paddingLeft="@dimen/font_margin_5"
+        android:paddingRight="@dimen/font_margin_5"
+        android:src="@drawable/checkout" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/font_padding_5"
+        android:layout_below="@+id/Child_Home_Btn" />
+
+    <ImageView
+        android:id="@+id/Arrow_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Child_Name_Item"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/font_margin_5"
+        android:contentDescription="@string/hello"
+        android:src="@drawable/arrow_list"
+        android:visibility="gone" />
+
+</RelativeLayout>

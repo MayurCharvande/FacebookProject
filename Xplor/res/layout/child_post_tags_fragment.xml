@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/list_item_drak_gray_address" />
+
+    <RelativeLayout
+        android:id="@+id/Search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:background="@color/transparent_gray_70"
+        android:padding="@dimen/font_padding_5" >
+
+        <RelativeLayout
+            android:id="@+id/Search_inner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg_item_white" >
+
+            <EditText
+                android:id="@+id/ChildTag_Search_Edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ChildTag_Search_Btn"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/search_icon"
+                android:ems="10"
+                android:fontFamily="Airal"
+                android:hint="Search"
+                android:inputType="textPersonName"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Green_Light"
+                android:textSize="@dimen/font_size_14"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/ChildTag_Search_Btn"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/hello"
+                android:src="@drawable/btn_close" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Search_layout"
+        android:background="@color/White"
+        android:padding="@dimen/font_padding_5" >
+
+        <Button
+            android:id="@+id/ChildTag_Select_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="Airal"
+            android:paddingBottom="@dimen/font_margin_5"
+            android:paddingLeft="@dimen/font_margin_5"
+            android:paddingRight="@dimen/font_margin_8"
+            android:paddingTop="@dimen/font_margin_5"
+            android:text="@string/txt_Select_all"
+            android:textColor="@color/Green_Light"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ChildTag_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Select_layout"
+        android:background="@android:color/transparent"
+        android:divider="@color/light_gray"
+        android:dividerHeight="0.7dp" />
+
+    <View
+        android:id="@+id/Bottom_Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/ChildTag_list"
+        android:background="@color/light_gray" />
+
+</RelativeLayout>

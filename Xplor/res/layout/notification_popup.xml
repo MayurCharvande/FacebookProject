@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/notification_popup_Top_Layout"
+        android:layout_width="@dimen/popup_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/font_margin_10"
+        android:background="@drawable/corner_bg_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notification_popup_Popup_Title_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/font_margin_10"
+            android:fontFamily="Airal"
+            android:text="Message"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/notification_popup_Popup_Message_Txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_popup_Popup_Title_Txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/font_margin_10"
+            android:fontFamily="Airal"
+            android:text="Profile Updated successfully."
+            android:gravity="center_horizontal"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="normal" />
+
+        <View
+            android:id="@+id/notification_popup_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/notification_popup_Popup_Message_Txt"
+            android:layout_marginTop="@dimen/font_margin_10"
+            android:background="@color/Dark_White" />
+
+        <RelativeLayout
+            android:id="@+id/notification_popup_Bottom_Layout_TwoButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popup_button_height"
+            android:layout_below="@+id/notification_popup_view_line" >
+
+            <Button
+                android:id="@+id/notification_popup_Popup_Yes_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/popup_button_height"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/notification_popup_view_Center"
+                android:background="@android:color/transparent"
+                android:text="YES"
+                android:textColor="@color/Green_Light"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/notification_popup_view_Center"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/Dark_White" />
+
+            <Button
+                android:id="@+id/notification_popup_Popup_No_Btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/popup_button_height"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/notification_popup_view_Center"
+                android:background="@android:color/transparent"
+                android:text="NO"
+                android:textColor="@color/Green_Light"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        
+        <Button
+            android:id="@+id/notification_popup_Popup_Ok_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/popup_button_height"
+            android:layout_below="@+id/notification_popup_view_line"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="OK"
+            android:textColor="@color/Green_Light"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
